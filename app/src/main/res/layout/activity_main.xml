@@ -7,20 +7,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#CDE8E5">
 
     <EditText
         android:id="@+id/enp"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="Enter your Enrolment Number:"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:textColor="#151515"
+        android:textColorHint="#7AB2B2"/>
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="Enter your Name:"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textColor="#151515"
+        android:textColorHint="#7AB2B2"/>
     <TextView
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -28,7 +33,10 @@
         android:layout_weight="1"
         android:hint="Fibonacci Series"
         android:layout_marginTop="20dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textColorHint="#7AB2B2"
+        android:textSize="20sp"/>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="150dp"
@@ -40,12 +48,15 @@
         android:layout_height="50dp"
         android:hint="Enter the value of n"
         android:textAlignment="center"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:textColor="#151515"
+        android:textColorHint="#7AB2B2"/>
     <Button
         android:id="@+id/submit"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Submit" />
+        android:text="Submit"
+        android:backgroundTint="#4D869C"/>
 </LinearLayout>
 
 </LinearLayout>

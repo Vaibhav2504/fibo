@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/enp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Enter your Enrolment Number:" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Enter your Name:"/>
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Fibonacci Series"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/nvalue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter the value of n"
+        android:textAlignment="center"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit" />
+</LinearLayout>
+
+</LinearLayout>

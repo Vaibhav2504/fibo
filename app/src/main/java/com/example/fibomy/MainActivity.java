@@ -15,10 +15,11 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button submit;
     TextView view;
-    TextView enp;
-    TextView name;
+    EditText enp;
+    EditText name;
     EditText nvalue;
     String fib = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,31 +31,26 @@ public class MainActivity extends AppCompatActivity {
         nvalue = findViewById(R.id.nvalue);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 fib = "";
                 String n = nvalue.getText().toString();
                 int num = Integer.parseInt(n);
-                loop(num);
+                fibo(num);
+                String names = name.getText().toString();
+                String enrol = enp.getText().toString();
+                view.setText("Name: " + names + "\n\nEnrollment: " + enrol + "\n\nFibonacci: " + fib);
             }
         });
     }
-    void loop(int n){
-        for(int i = 0; i <= n; i++){
-            long b = fibo(i);
-            fib = fib + b + " ";
-        }
-        view.setText(fib);
-    }
-    public long fibo (int n){
-        if (n <= 1)
-            return n;
-        long a = 0, b = 1;
-        long sum = 0;
-        for(int i = 2; i <= n; i++){
+
+    void fibo(int n) {
+        long a = 0, b = 1, sum;
+        fib = a + " " + b + " ";
+        for (int i = 2; i < n; i++) {
             sum = a + b;
             a = b;
             b = sum;
+            fib += sum + " ";
         }
-        return sum;
     }
 }
